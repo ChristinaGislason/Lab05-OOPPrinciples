@@ -12,12 +12,15 @@ namespace Lab05_OOPPrinciples
 
         static string Animal()
         {
-            // instantiate a new animal object
-            Animal animal = new Animal();
+            // instantiate concrete animals
+            Jaguar jaguar = new Jaguar();
+            Lion lion = new Lion();
+            Toucan toucan = new Toucan();
+            Parrot parrot = new Parrot();
+            Krill krill = new Krill();
+            Langostino langostino = new Langostino();
 
-            animal.Mammal = "feline";
-            animal.Aviary = "tropical bird";
-            animal.Crustacean = "shrimp";
+            
         }
     }
 }

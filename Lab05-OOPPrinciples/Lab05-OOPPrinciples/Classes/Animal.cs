@@ -6,9 +6,10 @@ namespace Lab05_OOPPrinciples.Classes
 {
     class Animal
     {
-        public string Mammal { get; set; }
-        public string Aviary { get; set; }
-        public string Crustacean { get; set; }
-
+        public int Eyes { get; set; }
+        public bool Legs { get; set; }
+        public string Sound { get; set; }
     }
+
+    
 }
