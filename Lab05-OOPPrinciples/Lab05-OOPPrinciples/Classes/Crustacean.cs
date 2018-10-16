@@ -4,10 +4,15 @@ using System.Text;
 
 namespace Lab05_OOPPrinciples.Classes
 {
-    // inheriting Animal class
-    class Crustacean : Animal
+    // Inheriting Animal class
+    public class Crustacean : Animal
     {
         public bool LivesInWater { get; set; }
         public bool Exoskeleton { get; set; }
+
+        public virtual string BeEaten()
+        {
+            return "I am food for humans!";
+        }
     }
 }

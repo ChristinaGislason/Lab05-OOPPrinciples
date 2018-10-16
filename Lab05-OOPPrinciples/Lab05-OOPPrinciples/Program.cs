@@ -7,20 +7,65 @@ namespace Lab05_OOPPrinciples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            OverrideAbstractMethods();
+            OverrideAbstractProperties();
+            OverrideVirtualMethods();
+            OverrideVirtualProperties();
         }
 
-        static string Animal()
+        static void OverrideAbstractMethods()
         {
-            // instantiate concrete animals
+            Cat cat = new Cat();
+            Console.WriteLine(cat.Bites());
+            Console.WriteLine(cat.Cry());
             Jaguar jaguar = new Jaguar();
-            Lion lion = new Lion();
-            Toucan toucan = new Toucan();
-            Parrot parrot = new Parrot();
-            Krill krill = new Krill();
-            Langostino langostino = new Langostino();
-
-            
+            Console.WriteLine(jaguar.Bites());
+            Console.WriteLine(jaguar.Cry());
         }
+
+        static void OverrideAbstractProperties()
+        {
+            Toucan toucan = new Toucan();
+            Console.WriteLine($"I have colorful plumage: {toucan.ColorfulPlumage}");
+            Console.WriteLine($"{toucan.TropicalHabitat}");
+            Parrot parrot = new Parrot();
+            Console.WriteLine($"I have colorful plumage: {parrot.ColorfulPlumage}");
+            Console.WriteLine($"{parrot.TropicalHabitat}");
+        }
+
+        static void OverrideVirtualMethods()
+        {
+            // Override two virtual methods
+            // Create animal objects and instantiate concrete animals
+            Parrot parrot = new Parrot();
+            Console.WriteLine(parrot.Fly());
+            Toucan toucan = new Toucan();
+            Console.WriteLine(toucan.Fly());
+
+            Krill krill = new Krill();
+            Console.WriteLine(krill.BeEaten());
+            Langostino langostino = new Langostino();
+            Console.WriteLine(langostino.BeEaten());
+        } 
+
+        static void OverrideVirtualProperties()
+        {
+            // Override two virtual properties 
+            Cat cat = new Cat();
+            Console.WriteLine($"I now have {cat.Whiskers} whiskers, not 10!");
+
+            Langostino langostino = new Langostino();
+            Console.WriteLine($"I now have {langostino.Legs} legs, not 6!");
+        }
+
+        
+
+
+
+        // create animal object and instantiate concrete animals
+        //Jaguar jaguar = new Jaguar();
+        //Cat cat = new Cat();
+        //Krill krill = new Krill();
+        //Langostino langostino = new Langostino();
     }
 }
