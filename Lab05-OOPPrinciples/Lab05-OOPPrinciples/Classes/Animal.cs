@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05_OOPPrinciples.Classes
 {
-        class Animal
+        public class Animal
     {
         public int Eyes { get; set; }
         public bool Breathe { get; set; }

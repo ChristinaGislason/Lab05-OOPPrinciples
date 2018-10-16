@@ -5,7 +5,7 @@ using System.Text;
 namespace Lab05_OOPPrinciples.Classes
 {
     //Inheriting Animal class
-    abstract class Mammal : Animal 
+    public abstract class Mammal : Animal 
     {
         public bool Hair { get; set; }
         public bool LiveBirth { get; set; }
