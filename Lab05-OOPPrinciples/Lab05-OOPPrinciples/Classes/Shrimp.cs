@@ -9,6 +9,5 @@ namespace Lab05_OOPPrinciples.Classes
     {
         public bool Delicious { get; set; }
         public virtual int Legs { get; set; } = 8;
-
     }
 }

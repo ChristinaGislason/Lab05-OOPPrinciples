@@ -8,19 +8,21 @@ namespace Lab05_OOPPrinciples
         static void Main(string[] args)
         {
             OverrideAbstractMethods();
-            OverrideAbstractProperties();
-
-
-
-
-
-
-
+            //OverrideAbstractProperties();
+            OverrideVirtualMethods();
+            OverrideVirtualProperties();
         }
 
         static void OverrideAbstractMethods()
         {
-            // Override two abstract methods
+
+        }
+
+        //static void OverridebstractProperties();
+
+        static void OverrideVirtualMethods()
+        {
+            // Override two virtual methods
             // Create animal objects and instantiate concrete animals
             Parrot parrot = new Parrot();
             Console.WriteLine(parrot.Fly());
@@ -33,9 +35,9 @@ namespace Lab05_OOPPrinciples
             Console.WriteLine(langostino.BeEaten());
         } 
 
-        static void OverrideAbstractProperties()
+        static void OverrideVirtualProperties()
         {
-            // Override two abstract properties 
+            // Override two virtual properties 
             Cat cat = new Cat();
             Console.WriteLine($"I now have {cat.Whiskers} whiskers, not 10!");
 
@@ -43,7 +45,7 @@ namespace Lab05_OOPPrinciples
             Console.WriteLine($"I now have {langostino.Legs} legs, not 6!");
         }
 
-        static 
+        
 
 
 

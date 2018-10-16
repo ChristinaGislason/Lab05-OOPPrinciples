@@ -10,6 +10,7 @@ namespace Lab05_OOPPrinciples.Classes
         public bool GreatInPasta { get; set; }
         public int Antennae { get; set; } = 2;
 
+        // Virtual property from Shrimp that langostino overrides
         public override int Legs { get; set; } = 10;
 
     }
