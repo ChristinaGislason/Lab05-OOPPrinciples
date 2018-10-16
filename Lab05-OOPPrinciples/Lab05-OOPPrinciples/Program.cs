@@ -9,13 +9,18 @@ namespace Lab05_OOPPrinciples
         {
             OverrideAbstractMethods();
             //OverrideAbstractProperties();
-            OverrideVirtualMethods();
-            OverrideVirtualProperties();
+            //OverrideVirtualMethods();
+            //OverrideVirtualProperties();
         }
 
         static void OverrideAbstractMethods()
         {
-
+            Cat cat = new Cat();
+            Console.WriteLine(cat.Bites());
+            Console.WriteLine(cat.Cry());
+            Jaguar jaguar = new Jaguar();
+            Console.WriteLine(jaguar.Bites());
+            Console.WriteLine(jaguar.Cry());
         }
 
         //static void OverridebstractProperties();
