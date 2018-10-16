@@ -8,9 +8,9 @@ namespace Lab05_OOPPrinciples
         static void Main(string[] args)
         {
             OverrideAbstractMethods();
-            //OverrideAbstractProperties();
-            //OverrideVirtualMethods();
-            //OverrideVirtualProperties();
+            OverrideAbstractProperties();
+            OverrideVirtualMethods();
+            OverrideVirtualProperties();
         }
 
         static void OverrideAbstractMethods()
@@ -23,7 +23,15 @@ namespace Lab05_OOPPrinciples
             Console.WriteLine(jaguar.Cry());
         }
 
-        //static void OverridebstractProperties();
+        static void OverrideAbstractProperties()
+        {
+            Toucan toucan = new Toucan();
+            Console.WriteLine($"I have colorful plumage: {toucan.ColorfulPlumage}");
+            Console.WriteLine($"{toucan.TropicalHabitat}");
+            Parrot parrot = new Parrot();
+            Console.WriteLine($"I have colorful plumage: {parrot.ColorfulPlumage}");
+            Console.WriteLine($"{parrot.TropicalHabitat}");
+        }
 
         static void OverrideVirtualMethods()
         {

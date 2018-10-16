@@ -5,9 +5,9 @@ using System.Text;
 namespace Lab05_OOPPrinciples.Classes
 { 
     // Inheriting Aviary class
-    class TropicalBird : Aviary
+    abstract class TropicalBird : Aviary
     {
-        public string TropicalHabitat { get; set; }
-        public bool ColorfulPlumage { get; set; }
+        public abstract string TropicalHabitat { get; set; }
+        public abstract bool ColorfulPlumage { get; set; } 
     }  
 }
