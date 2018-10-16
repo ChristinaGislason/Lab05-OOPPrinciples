@@ -9,6 +9,6 @@ namespace Lab05_OOPPrinciples.Classes
     {
         public int Paws { get; set; }
         public bool Claws { get; set; }
-        public bool Whiskers { get; set; }
+        public virtual int Whiskers { get; set; } = 10;
     }   
 }

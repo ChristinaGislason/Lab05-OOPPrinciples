@@ -9,5 +9,12 @@ namespace Lab05_OOPPrinciples.Classes
     {
         public bool Beak { get; set; }
         public int Wings { get; set; }
+
+        public virtual string Fly()
+        {          
+            return "I can fly!";
+        } 
     }
+
+    
 }

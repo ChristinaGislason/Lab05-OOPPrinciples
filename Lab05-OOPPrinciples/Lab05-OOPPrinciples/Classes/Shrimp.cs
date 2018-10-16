@@ -8,6 +8,7 @@ namespace Lab05_OOPPrinciples.Classes
     class Shrimp : Crustacean
     {
         public bool Delicious { get; set; }
-        public int Antennae { get; set; }
+        public virtual int Legs { get; set; } = 8;
+
     }
 }

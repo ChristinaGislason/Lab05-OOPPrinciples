@@ -9,5 +9,9 @@ namespace Lab05_OOPPrinciples.Classes
     {
         public bool Domesticated { get; set; }
         public bool LovesCatnip { get; set; }
+        
+        // Virtual property from Feline that Cat overrides
+        public override int Whiskers { get; set; } = 4;
+
     }
 }

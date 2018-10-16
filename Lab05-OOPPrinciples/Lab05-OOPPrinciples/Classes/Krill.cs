@@ -9,5 +9,11 @@ namespace Lab05_OOPPrinciples.Classes
     {
         public bool WhaleFood { get; set; }
         public bool TinySize { get; set; }
+
+        // Virtual method from Crustacean that Krill is overriding
+        public override string BeEaten()
+        {
+            return "I am food for whales!";
+        }
     }
 }

@@ -9,5 +9,13 @@ namespace Lab05_OOPPrinciples.Classes
     {
         public bool NamedSam { get; set; }
         public bool EatsCereal { get; set; }
+
+        // Virtual method from Aviary that Toucan is overriding
+        public override string Fly()
+        {
+            return "I cannot fly!";
+        }
     }
+
+
 }
