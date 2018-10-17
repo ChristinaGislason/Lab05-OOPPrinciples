@@ -13,7 +13,7 @@ namespace Lab05_OOPPrinciples.Classes
         {
             get
             {
-                return "Splashhhh!";
+                return "Crustaceans can swim.";
             }
             set
             {

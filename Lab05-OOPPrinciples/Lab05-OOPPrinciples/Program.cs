@@ -7,14 +7,20 @@ namespace Lab05_OOPPrinciples
     {
         static void Main(string[] args)
         {
+            ImplementInterfaces();
             OverrideAbstractMethods();
             OverrideAbstractProperties();
             OverrideVirtualMethods();
             OverrideVirtualProperties();
-            Jaguar testJaguar = new Jaguar();
-            Console.WriteLine(testJaguar.Sleep);
-            Krill testKrill = new Krill();
-            Console.WriteLine(testKrill.Swim);
+            
+        }
+
+        static void ImplementInterfaces()
+        {
+            Jaguar jaguar = new Jaguar();
+            Console.WriteLine(jaguar.Sleep);
+            Krill krill = new Krill();
+            Console.WriteLine(krill.Swim);
         }
 
         static void OverrideAbstractMethods()
