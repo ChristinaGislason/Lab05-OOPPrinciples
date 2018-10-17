@@ -11,6 +11,10 @@ namespace Lab05_OOPPrinciples
             OverrideAbstractProperties();
             OverrideVirtualMethods();
             OverrideVirtualProperties();
+            Jaguar testJaguar = new Jaguar();
+            Console.WriteLine(testJaguar.Sleep);
+            Krill testKrill = new Krill();
+            Console.WriteLine(testKrill.Swim);
         }
 
         static void OverrideAbstractMethods()
@@ -26,10 +30,10 @@ namespace Lab05_OOPPrinciples
         static void OverrideAbstractProperties()
         {
             Toucan toucan = new Toucan();
-            Console.WriteLine($"I have colorful plumage: {toucan.ColorfulPlumage}");
+            Console.WriteLine($"A toucan has colorful plumage: {toucan.ColorfulPlumage}");
             Console.WriteLine($"{toucan.TropicalHabitat}");
             Parrot parrot = new Parrot();
-            Console.WriteLine($"I have colorful plumage: {parrot.ColorfulPlumage}");
+            Console.WriteLine($"A parrot has colorful plumage: {parrot.ColorfulPlumage}");
             Console.WriteLine($"{parrot.TropicalHabitat}");
         }
 
@@ -52,20 +56,10 @@ namespace Lab05_OOPPrinciples
         {
             // Override two virtual properties 
             Cat cat = new Cat();
-            Console.WriteLine($"I now have {cat.Whiskers} whiskers, not 10!");
+            Console.WriteLine($"Cat has {cat.Whiskers} whiskers, not 10!");
 
             Langostino langostino = new Langostino();
-            Console.WriteLine($"I now have {langostino.Legs} legs, not 6!");
-        }
-
-        
-
-
-
-        // create animal object and instantiate concrete animals
-        //Jaguar jaguar = new Jaguar();
-        //Cat cat = new Cat();
-        //Krill krill = new Krill();
-        //Langostino langostino = new Langostino();
+            Console.WriteLine($"Langostino has {langostino.Legs} legs, not 6!");
+        }       
     }
 }

@@ -10,7 +10,7 @@ namespace Lab05_OOPPrinciples.Classes
         public int PirateFriends { get; set; }
         public bool RedPlummage { get; set; }
 
-        public override string TropicalHabitat { get; set; } = "I live in the Amazon!";
+        public override string TropicalHabitat { get; set; } = "Parrots live in the Amazon!";
         public override bool ColorfulPlumage { get; set; } = true;
     }
 }

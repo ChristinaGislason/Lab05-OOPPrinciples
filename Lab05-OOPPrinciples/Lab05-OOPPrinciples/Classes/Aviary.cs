@@ -12,7 +12,7 @@ namespace Lab05_OOPPrinciples.Classes
 
         public virtual string Fly()
         {          
-            return "I can fly!";
+            return "Aviary species can fly!";
         } 
     }
 
