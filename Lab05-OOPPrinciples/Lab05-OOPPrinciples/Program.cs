@@ -11,6 +11,8 @@ namespace Lab05_OOPPrinciples
             OverrideAbstractProperties();
             OverrideVirtualMethods();
             OverrideVirtualProperties();
+            Jaguar testJaguar = new Jaguar();
+            Console.WriteLine(testJaguar.Sleep); 
         }
 
         static void OverrideAbstractMethods()
