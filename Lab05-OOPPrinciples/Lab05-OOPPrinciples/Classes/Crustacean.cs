@@ -23,7 +23,7 @@ namespace Lab05_OOPPrinciples.Classes
 
         public virtual string BeEaten()
         {
-            return "I am food for humans!";
+            return "Crustaceans are food for humans!";
         }
     }
 }

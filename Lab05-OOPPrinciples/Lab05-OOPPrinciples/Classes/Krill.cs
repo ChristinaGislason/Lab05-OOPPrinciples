@@ -13,7 +13,7 @@ namespace Lab05_OOPPrinciples.Classes
         // Virtual method from Crustacean that Krill is overriding
         public override string BeEaten()
         {
-            return "I am food for whales!";
+            return "Krill are food for whales!";
         }
     }
 }

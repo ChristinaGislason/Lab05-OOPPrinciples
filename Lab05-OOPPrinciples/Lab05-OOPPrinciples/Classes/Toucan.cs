@@ -10,14 +10,14 @@ namespace Lab05_OOPPrinciples.Classes
         public bool NamedSam { get; set; }
         public bool EatsCereal { get; set; }
 
-        public override string TropicalHabitat { get; set; } = "I don't live in the Amazon!";
+        public override string TropicalHabitat { get; set; } = "Toucans don't live in the Amazon!";
         public override bool ColorfulPlumage { get; set; } = false;
 
 
         // Virtual method from Aviary that Toucan is overriding
         public override string Fly()
         {
-            return "I cannot fly!";
+            return "Toucans cannot fly!";
         }
     }
 
