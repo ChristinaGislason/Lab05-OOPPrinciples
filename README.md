@@ -17,4 +17,6 @@ Animal Class implements a sleep interface and the Crustacean Class implements a 
 
 ## Solution
  
+ ![ZooChartImage](https://github.com/ChristinaGislason/Lab05-OOPPrinciples/blob/master/ZooChart.JPG)
+ 
  
