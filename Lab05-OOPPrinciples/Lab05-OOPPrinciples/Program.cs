@@ -12,7 +12,9 @@ namespace Lab05_OOPPrinciples
             OverrideVirtualMethods();
             OverrideVirtualProperties();
             Jaguar testJaguar = new Jaguar();
-            Console.WriteLine(testJaguar.Sleep); 
+            Console.WriteLine(testJaguar.Sleep);
+            Krill testKrill = new Krill();
+            Console.WriteLine(testKrill.Swim);
         }
 
         static void OverrideAbstractMethods()
@@ -28,10 +30,10 @@ namespace Lab05_OOPPrinciples
         static void OverrideAbstractProperties()
         {
             Toucan toucan = new Toucan();
-            Console.WriteLine($"I have colorful plumage: {toucan.ColorfulPlumage}");
+            Console.WriteLine($"Toucan has colorful plumage: {toucan.ColorfulPlumage}");
             Console.WriteLine($"{toucan.TropicalHabitat}");
             Parrot parrot = new Parrot();
-            Console.WriteLine($"I have colorful plumage: {parrot.ColorfulPlumage}");
+            Console.WriteLine($"Parrot has colorful plumage: {parrot.ColorfulPlumage}");
             Console.WriteLine($"{parrot.TropicalHabitat}");
         }
 

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Lab05_OOPPrinciples
 {
-    interface ISleep
+    interface ISwim
     {
-        string Sleep { get; set; }
+        string Swim { get; set; }
     }
 }
