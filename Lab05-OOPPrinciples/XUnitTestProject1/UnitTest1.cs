@@ -26,7 +26,7 @@ namespace XUnitTestProject1
         public void TestKrill()
         {
             Krill krill = new Krill();
-            Assert.Equal("I am food for whales!", krill.BeEaten());
+            Assert.Equal("Krill are food for whales!", krill.BeEaten());
 
         }
 
@@ -42,7 +42,7 @@ namespace XUnitTestProject1
         public void TestParrot()
         {
             Parrot parrot = new Parrot();
-            Assert.Equal("I live in the Amazon!", parrot.TropicalHabitat);
+            Assert.Equal("Parrots live in the Amazon!", parrot.TropicalHabitat);
             Assert.True(parrot.ColorfulPlumage);
         }
 
@@ -50,8 +50,23 @@ namespace XUnitTestProject1
         public void TestToucan()
         {
             Toucan toucan = new Toucan();
-            Assert.Equal("I don't live in the Amazon!", toucan.TropicalHabitat);
+            Assert.Equal("Toucans don't live in the Amazon!", toucan.TropicalHabitat);
             Assert.False(toucan.ColorfulPlumage);
+        }
+
+        //test interfaces
+        [Fact]
+        public void TestSleep()
+        {
+            Toucan toucan = new Toucan();
+            Assert.Equal("Zzzzzz. Animals sleep!", toucan.Sleep);
+        }
+
+        [Fact]
+        public void TestSwim()
+        {
+            Krill krill = new Krill();
+            Assert.Equal("Crustaceans can swim.", krill.Swim);
         }
     }
 }

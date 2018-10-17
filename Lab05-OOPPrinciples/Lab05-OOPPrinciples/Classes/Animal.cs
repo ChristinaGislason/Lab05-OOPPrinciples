@@ -13,7 +13,7 @@ namespace Lab05_OOPPrinciples.Classes
         {
             get
             {
-                return "Zzzzzz";
+                return "Zzzzzz. Animals sleep!";
             }
             set
             {
